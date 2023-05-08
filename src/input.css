@@ -65,23 +65,53 @@
     }
 
     .line span{
-        width:5rem;
-        height:.4rem;
-        background: #F58F7C;
-        display:block;
-        margin:0 auto;
+       
+
+        @apply w-[5rem] h-[.4rem] bg-[#F58F7C] block mx-auto lg:float-left;
     }
 
     .socials span {
 
-        @apply w-[3.5rem] h-[3.5rem] rounded-full border-solid border-4 border-white;
+        @apply w-[3.5rem] h-[3.5rem] rounded-full border-solid border-4 border-white ;
     }
 
     .hire {
-        @apply w-[5rem] h-[7rem] py-[.8rem] px-[1.5rem] bg-lightred rounded-lg;
+        @apply w-[5rem] h-[7rem] py-[.8rem] px-[1.5rem] bg-lightred rounded-lg border-solid border-4 border-transparent lg:hover:border-solid lg:hover:border-4 lg:hover:border-white lg:hover:bg-transparent lg:hover:text-lightred ;
     }
 
     .proj {
-        @apply w-[5rem] h-[7rem] py-[.5rem] px-[1.5rem] border-solid border-4 border-white rounded-lg text-lightred;
+        @apply w-[5rem] h-[7rem] py-[.8rem] px-[1.5rem] border-solid border-4 border-white rounded-lg text-lightred lg:hover:bg-lightred lg:hover:text-white lg:hover:border-solid lg:hover:border-4 lg:hover:border-transparent;
     }
+
+    .title span{
+        @apply w-[5rem] h-[.4rem] bg-[#F58F7C] block mx-auto
+    }
+
+    .contact__title span{
+         @apply w-[5rem] h-[.4rem] bg-[#F58F7C] block mx-auto lg:float-left;
+     }
+
+    .download{
+        @apply w-[5rem] h-[1rem] bg-lightred py-[.6rem] px-[1.5rem] rounded-md lg:hover:bg-white lg:hover:text-lightred;
+    }
+
+    .icons span{
+        @apply  py-[1rem] px-[1rem] rounded-full border-solid border-4 border-darkgray;
+    }
+
+    .message{
+        @apply py-[1rem] px-[2rem] bg-lightred rounded-md;
+    }
+
+    .footer__line span{
+        @apply w-[50rem] h-[2rem] bg-lightred;
+    }
+
+    .seelive{
+        @apply py-[.5rem] px-[1rem] rounded-md bg-lightred;
+    }
+    .seemore{
+        @apply py-[.9rem] px-[1.5rem] bg-lightred rounded-md lg:hover:bg-white lg:hover:text-lightred;
+    }
+
 }
