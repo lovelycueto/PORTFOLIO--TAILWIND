@@ -50,9 +50,7 @@
         @apply absolute bg-lightgray right-0 top-0 w-0 h-[100vh] overflow-hidden p-0 z-[999] 
         lg:static lg:w-full lg:h-auto lg:bg-darkgray;
     }
-    .header__nav ul li:not(:first-child),.header__nav ul li:not(:last-child){
-        @apply mx-[1rem];
-    }
+    
     .header__nav ul.open{
         @apply  w-[50%]  pt-20 pl-0;
     }
@@ -65,8 +63,6 @@
     }
 
     .line span{
-       
-
         @apply w-[5rem] h-[.4rem] bg-[#F58F7C] block mx-auto lg:float-left;
     }
 
@@ -84,20 +80,18 @@
     }
 
     .title span{
-        @apply w-[5rem] h-[.4rem] bg-[#F58F7C] block mx-auto
+        @apply w-[5rem] lg:w-[8rem] h-[.4rem] bg-[#F58F7C] block mx-auto
     }
 
     .contact__title span{
-         @apply w-[5rem] h-[.4rem] bg-[#F58F7C] block mx-auto lg:float-left;
+         @apply w-[5rem] lg:w-[6rem] h-[.4rem] bg-[#F58F7C] block mx-auto lg:float-left;
      }
 
     .download{
         @apply w-[5rem] h-[1rem] bg-lightred py-[.6rem] px-[1.5rem] rounded-md lg:hover:bg-white lg:hover:text-lightred;
     }
 
-    .icons span{
-        @apply  py-[1rem] px-[1rem] rounded-full border-solid border-4 border-darkgray;
-    }
+    
 
     .message{
         @apply py-[1rem] px-[2rem] bg-lightred rounded-md;
@@ -112,6 +106,10 @@
     }
     .seemore{
         @apply py-[.9rem] px-[1.5rem] bg-lightred rounded-md lg:hover:bg-white lg:hover:text-lightred;
+    }
+
+    #name{
+    @apply text-lightred;
     }
 
 }

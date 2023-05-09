@@ -13,16 +13,17 @@
         <div class="header bg-darkgray">
             <div class="container">
                 <div class="header__wrapper flex items-center justify-between">
+                    
                     <div class="branding">
                         <img src="../img/LOGO.png" alt="" class="w-[2.5rem]">
                     </div>
                     <div class="header__nav">
-                        <ul class="lg:flex lg:items-center" >
-                            <li class="w-[100%]  border-b-lightred border-b-[2px] lg:border-b-0 mb-[2rem]"><a href="#" class="text-white text-[1.5rem] lg:hover:text-lightred">Home</a></li>
-                            <li  class="w-[100%] border-b-lightred border-b-[2px]  lg:border-b-0 mb-[2rem]"><a href="#" class="text-white text-[1.5rem] lg:hover:text-lightred">About</a> </li>
-                            <li  class="w-[100%] border-b-lightred border-b-[2px] leading-10 lg:border-b-0 mb-[2rem]"><a href="#" class="text-white text-[1.5rem] lg:hover:text-lightred">Services</a></li>
-                            <li  class="w-[100%] border-b-lightred border-b-[2px] leading-10 lg:border-b-0 mb-[2rem]"><a href="#" class="text-white text-[1.5rem] lg:hover:text-lightred">Works</a></li>
-                            <li  class="w-[100%] border-b-lightred border-b-[2px] leading-10 lg:border-b-0 mb-[2rem]"><a href="#" class="text-white text-[1.5rem] lg:hover:text-lightred">Contact</a></li>
+                        <ul class="lg:flex  lg:items-center" >
+                            <li class="w-[100%]  border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] active:text-lightred pl-[.5rem] pb-[1rem]"><a href="#banner" class="text-white text-[1.5rem] lg:hover:text-lightred">Home</a></li>
+                            <li  class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] lg:mx-[2rem] pl-[.5rem] pb-[1rem]"><a href="#about" class="text-white text-[1.5rem] lg:hover:text-lightred">About</a> </li>
+                            <li  class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] pl-[.5rem] pb-[1rem]"  ><a href="#services" class="text-white text-[1.5rem] lg:hover:text-lightred">Services</a></li>
+                            <li  class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] lg:mx-[2rem] pl-[.5rem] pb-[1rem]"><a href="#works" class="text-white text-[1.5rem] lg:hover:text-lightred">Works</a></li>
+                            <li  class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] pl-[.5rem] pb-[1rem]"><a href="#contact" class="text-white text-[1.5rem] lg:hover:text-lightred">Contact</a></li>
                         </ul>
                     </div>
 
@@ -40,10 +41,10 @@
     </header>
 
 <!-----------------bannerrrrr--------------------->
-    <div class="banner bg-darkgray py-5 ">
+    <div class="banner bg-darkgray py-5 lg:h-[50rem] h-[48rem]" id="banner">
         <div class="container">
-            <div class="banner__wrapper lg:flex lg:justify-between lg:py-10">
-                <div class="banner__content text-center lg:text-left ">
+            <div class="banner__wrapper lg:flex lg:justify-between lg:mt-[10rem] ">
+                <div class="banner__content text-center lg:text-left mt-[10rem] lg:mt-0 ">
                     <h3 class="text-[1.5rem] text-white mb-[1rem] lg:text-[2rem] ">Web Developer</h3>
                     <div class="line">
                         <span></span>
@@ -51,8 +52,8 @@
                     <h3 class="text-[3.5rem]  font-bold text-lightred py-[1rem] lg:text-[4rem]">LOVELY CUETO</h3>
 
                         <div class="buttons mt-[1.5rem]">
-                            <a href="#" class="hire mr-[3rem]">Hire Me</a>
-                            <a href="#" class="proj">Projects</a>
+                            <a href="#contact" class="hire mr-[3rem]">Hire Me</a>
+                            <a href="#works" class="proj">Projects</a>
                         </div>
 
                             <div class="socials flex gap-[.5rem] justify-center mt-[3rem] lg:float-left">
@@ -70,11 +71,11 @@
         </div>
     </div>
 <!-----------------about me----------------------->
-    <div class="about bg-lightgray py-5 lg:py-20">
+    <div class="about bg-lightgray py-5 lg:py-20" id="about">
         <div class="container">
             <div class="about__wrapper text-center">
                 <div class="title mb-[2rem] ">
-                    <h2 class="text-[1.9rem] text-lightred font-bold">About Me</h2>
+                    <h2 class="text-[1.9rem] lg:text-[2.5rem] text-lightred font-bold">About Me</h2>
                     <span></span>
                 </div>
 
@@ -96,7 +97,7 @@
         </div>
     </div>
 <!-----------------services----------------------->
-    <div class="services py-5 bg-darkgray lg:py-10">
+    <div class="services py-5 bg-darkgray lg:py-10" id="services">
         <div class="container">
             <div class="services__wrapper">
                 <div class="services__content items-center">
@@ -104,35 +105,35 @@
                         <h2 class="text-[1.9rem] text-lightred font-bold">Services</h2>
                         <span></span>
                     </div>
-                    <div class="services__content__card lg:grid grid-rows-1 grid-flow-col gap-4  lg:-mt-[8rem] text-center">
+                    <div class="services__content__card lg:flex lg:justify-between lg:-mt-[8rem] text-center">
 
-                        <div class="services__card lg:group bg-white text-center py-5 w-[26rem] mx-auto lg:w-[25rem] lg:h-[24rem] items-center lg:hover:bg-lightred lg:hover:scale-110 lg:hover:hover:transition ease-out duration-700">
-                            <div class="icons mt-[2rem] mb-[2rem] lg:mt-[4.5rem]">
-                                <span class="lg:group-hover:text-white"><i class="fa-solid fa-paintbrush text-[1.5rem] text-darkgray lg:group-hover:text-white"></i></span>
+                        <div class="services__card group bg-white text-center py-5 w-[26rem] mx-auto lg:w-[25rem] lg:h-[24rem] items-center lg:hover:bg-lightred lg:hover:scale-110 lg:hover:hover:transition ease-out duration-700">
+                            <div class=" mt-[2rem] mb-[2rem] lg:mt-[4.5rem] ">
+                                <span class="py-[1rem] px-[1rem] rounded-full border-solid border-4 border-darkgray group-hover:lg:border-white"><i class="fa-solid fa-paintbrush text-[1.5rem] text-darkgray group-hover:lg:text-white"></i></span>
                             </div>
                             <div class="services__card__text ">
-                                <h2 class="text-[1.5rem] text-darkgray lg:group-hover:text-white font-semibold mt-[1rem] mb-[1rem] lg:mt-[2.5rem] lg:mb-[1.5rem]">Graphic Design</h2>
-                                <p class="text-[1.2rem] text-darkgray  lg:group-hover:text-white w-[17rem] mx-auto mb-[1rem] text-justify">Lorem ipsum dolor sit amet consectetur. Faucibus arcu vitae non viverra at aenean.</p>
+                                <h2 class="text-[1.5rem] text-darkgray group-hover:lg:text-white font-semibold mt-[1rem] mb-[1rem] lg:mt-[2.5rem] lg:mb-[1.5rem]">Graphic Design</h2>
+                                <p class="text-[1.2rem] text-darkgray  group-hover:lg:text-white w-[17rem] mx-auto mb-[1rem] text-justify">Lorem ipsum dolor sit amet consectetur. Faucibus arcu vitae non viverra at aenean.</p>
                             </div>
                         </div>
     
-                        <div class="services__card lg:group bg-white text-center py-5 w-[26rem] mx-auto  lg:w-[25rem] lg:h-[24rem] items-center mt-[2rem] mb-[2rem] lg:mt-0 lg:mb-0 lg:hover:bg-lightred lg:hover:scale-110 lg:hover:hover:transition ease-out duration-700">
-                            <div class="icons mt-[2rem] mb-[2rem] lg:mt-[4.5rem]">
-                                <span><i class="fa-solid fa-code text-[1.6rem] text-darkgray lg:group-hover:text-white"></i></span>
+                        <div class="services__card group bg-white text-center py-5 w-[26rem] mx-auto  lg:w-[25rem] lg:h-[24rem] items-center mt-[2rem] mb-[2rem] lg:mt-0 lg:mb-0 lg:hover:bg-lightred lg:hover:scale-110 lg:hover:hover:transition ease-out duration-700">
+                            <div class=" mt-[2rem] mb-[2rem] lg:mt-[4.5rem]">
+                                <span class="py-[1rem] px-[1rem] rounded-full border-solid border-4 border-darkgray group-hover:lg:border-white"><i class="fa-solid fa-code text-[1.3rem] text-darkgray group-hover:lg:text-white"></i></span>
                             </div>
                             <div class="services__card__text ">
-                                <h2 class="text-[1.5rem] text-darkgray lg:group-hover:text-white font-semibold mt-[1rem] mb-[1rem] lg:mt-[2.5rem] lg:mb-[1.5rem]">Web Design</h2>
-                                <p class="text-[1.2rem] text-darkgray lg:group-hover:text-white w-[17rem] mx-auto mb-[1rem] text-justify">Lorem ipsum dolor sit amet consectetur. Faucibus arcu vitae non viverra at aenean.</p>
+                                <h2 class="text-[1.5rem] text-darkgray group-hover:lg:text-white font-semibold mt-[1rem] mb-[1rem] lg:mt-[2.5rem] lg:mb-[1.5rem]">Web Design</h2>
+                                <p class="text-[1.2rem] text-darkgray group-hover:lg:text-white w-[17rem] mx-auto mb-[1rem] text-justify">Lorem ipsum dolor sit amet consectetur. Faucibus arcu vitae non viverra at aenean.</p>
                             </div>
                         </div>
     
-                        <div class="services__card lg:group bg-white text-center py-5 w-[26rem] mx-auto items-center  lg:w-[25rem] lg:h-[24rem] lg:hover:bg-lightred lg:hover:scale-110 lg:hover:hover:transition ease-out duration-700">
-                            <div class="icons mt-[2rem] mb-[2rem] lg:mt-[4.5rem]">
-                                <span><i class="fa-solid fa-laptop-code text-[1.5rem] text-darkgray lg:group-hover:text-white"></i></span>
+                        <div class="services__card group bg-white text-center py-5 w-[26rem] mx-auto items-center  lg:w-[25rem] lg:h-[24rem] lg:hover:bg-lightred lg:hover:scale-110 lg:hover:hover:transition ease-out duration-700">
+                            <div class=" mt-[2rem] mb-[2rem] lg:mt-[4.5rem]">
+                                <span class="py-[1rem] px-[1rem] rounded-full border-solid border-4 border-darkgray group-hover:lg:border-white"><i class="fa-solid fa-laptop-code text-[1.5rem] text-darkgray group-hover:lg:text-white"></i></span>
                             </div>
                             <div class="services__card__text ">
-                                <h2 class="text-[1.5rem] text-darkgray lg:group-hover:text-white font-semibold mt-[1rem] mb-[1rem] lg:mt-[2.5rem] lg:mb-[1.5rem]">Web Development</h2>
-                                <p class="text-[1.2rem] text-darkgray lg:group-hover:text-white w-[17rem] mx-auto mb-[1rem] text-justify">Lorem ipsum dolor sit amet consectetur. Faucibus arcu vitae non viverra at aenean.</p>
+                                <h2 class="text-[1.5rem] text-darkgray group-hover:lg:text-white font-semibold mt-[1rem] mb-[1rem] lg:mt-[2.5rem] lg:mb-[1.5rem]">Web Development</h2>
+                                <p class="text-[1.2rem] text-darkgray group-hover:lg:text-white w-[17rem] mx-auto mb-[1rem] text-justify">Lorem ipsum dolor sit amet consectetur. Faucibus arcu vitae non viverra at aenean.</p>
                             </div>
                         </div>
 
@@ -143,12 +144,12 @@
         </div>
     </div>
 <!-----------------latest work----------------------->
-    <div class="latest py-5 bg-lightgray">
+    <div class="latest py-5 bg-lightgray" id="works">
         <div class="container">
             <div class="latest__wrapper">
                 <div class="latest__content text-center items-center">
                     <div class="title mb-[2rem]">
-                        <h2 class="text-[1.9rem] text-lightred font-bold ">Latest Work</h2>
+                        <h2 class="text-[1.9rem] lg:text-[2.5rem] text-lightred font-bold ">Latest Work</h2>
                         <span></span>
                     </div>
 
@@ -173,7 +174,7 @@
                             </div>
                         </div>
         
-                        <div class=" justify-center mt-[2rem] mb-[2rem]">
+                        <div class=" justify-center mt-[2rem] mb-[2rem] lg:mt-0 lg:mb-0">
                             <div class="group h-56 w-96 [perspective:1000px] mx-auto" >
                                 <div class="relative h-full w-full  transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     <div class="absolute inset-0">
@@ -192,7 +193,7 @@
                             </div>
                         </div>
         
-                        <div class=" justify-center mt-[2rem] mb-[2rem]">
+                        <div class=" justify-center mt-[2rem] mb-[2rem] lg:mt-0 lg:mb-0">
                             <div class="group h-56 w-96 [perspective:1000px] mx-auto" >
                                 <div class="relative h-full w-full  transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     <div class="absolute inset-0">
@@ -211,7 +212,7 @@
                             </div>
                         </div>
         
-                        <div class=" justify-center mt-[2rem] mb-[2rem] ">
+                        <div class=" justify-center mt-[2rem] mb-[2rem]  lg:mt-0 lg:mb-0">
                             <div class="group h-56  w-96 [perspective:1000px] mx-auto" >
                                 <div class="relative h-full w-full  transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     <div class="absolute inset-0">
@@ -232,7 +233,7 @@
         
                     </div>
         
-                    <a href="#" class="seemore text-darkgray font-semibold text-[1rem] ">See More</a>
+                    <a href="http://127.0.0.1:5501/dist/seemore.html" class="seemore text-darkgray font-semibold text-[1rem] ">See More</a>
 
 
                 </div>
@@ -247,7 +248,7 @@
         </div>
     </div>
 <!-----------------contact----------------------->
-    <div class="contact py-5 bg-darkgray">
+    <div class="contact py-5 bg-darkgray" id="contact">
         <div class="container">
             <div class="contact__wrapper lg:bg-lightgray lg:rounded-lg lg:grid gap-2 grid-cols-2">
                 <div class="contact__content text-center lg:py-20 lg:px-20 lg:text-left">
@@ -259,7 +260,7 @@
                         <p class="">If you have any concerns or inquiries that may come up, you can reach out to me using the accounts below.</p>
                     </div>
                     
-                    <div class="contact__info  mt-[5rem] lg:mt-0 flex items-center gap-4 float-center w-[25rem] mx-auto lg:float-left">
+                    <div class="contact__info group mt-[5rem] lg:mt-0 flex items-center gap-4 float-center w-[25rem] mx-auto lg:float-left">
                         <div class="icon ">
                             <ul>
                                 <li class="text-[1.3rem] text-white"><i class="fa-solid fa-envelope"></i></li>
@@ -267,11 +268,11 @@
                                 <li class="text-[1.3rem] text-white"><i class="fa-solid fa-location-dot"></i></li>
                             </ul>
                         </div>
-                        <div class="text">
+                        <div class="text ">
                             <ul>
-                                <li class="text-white text-[1.3rem] -ml-[6rem] lg:ml-0">cuetolovely0118@gmail.com</li>
-                                <li class="text-white text-[1.3rem] mt-[1rem] mb-[1rem] lg:mt-[2rem] lg:mb-[2rem] -ml-[12rem] lg:ml-0">(+63)909 704 9060</li>
-                                <li class="text-white text-[1.3rem]">Brgy. Sta Maria SPC, Laguna Philippines</li>
+                                <li class="text-white text-[1.3rem] -ml-[6rem] lg:ml-0 hover:lg:text-lightred">cuetolovely0118@gmail.com</li>
+                                <li class="text-white text-[1.3rem] mt-[1rem] mb-[1rem] lg:mt-[2rem] lg:mb-[2rem] -ml-[12rem] lg:ml-0 hover:lg:text-lightred">(+63)909 704 9060</li>
+                                <li class="text-white text-[1.3rem] hover:lg:text-lightred">Brgy. Sta Maria SPC, Laguna Philippines</li>
                             </ul>
                         </div>
                        
@@ -279,15 +280,16 @@
 
                     
                 </div>
-                <div class="contact__form mt-[2rem] py-20 lg:block text-center lg:py-5 ">
-                    <input type="name" placeholder="Name"  class="  w-[26rem] h-[2rem] rounded-lg lg:block lg:w-[40rem] lg:h-[4rem] ">
-                    <input type="email" placeholder="Email" class="w-[26rem] h-[2rem] mt-[1.5rem] mb-[1.5rem] rounded-md lg:block lg:w-[40rem] lg:h-[4rem] lg:mt-[2.5rem] lg:mb-[2.5rem]"  >
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="w-[26rem] rounded-md lg:block lg:w-[40rem] lg:h-[12rem]"></textarea><br>
-                   <input type="submit" value="Send message" class="message text-[1rem] float-right mr-[1.5rem] mt-[1.5rem] text-white text-right lg:hover:bg-white lg:block lg:hover:text-lightred lg:float-right lg:mr-[6rem] lg:mt-[1.5rem]">
-            </div>
+                    <div class="contact__form mt-[2rem] py-20 lg:block text-center lg:py-5 ">
+                        <input type="name" placeholder="Name" id="name" class="  w-[26rem] h-[2rem] rounded-lg lg:block lg:w-[40rem] lg:h-[4rem] px-[2rem] ">
+                        <input type="email" placeholder="Email" class="w-[26rem] h-[2rem] mt-[1.5rem] mb-[1.5rem] rounded-md lg:block lg:w-[40rem] lg:h-[4rem] lg:mt-[2.5rem] lg:mb-[2.5rem] px-[2rem]"  >
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="w-[26rem] rounded-md lg:block lg:w-[40rem] lg:h-[12rem] px-[2rem] py-[1rem]"></textarea><br>
+                        <input type="submit" value="Send message" class="message text-[1rem] float-right mr-[1.5rem] mt-[1.5rem] text-white text-right lg:hover:bg-white lg:block lg:hover:text-lightred lg:float-right lg:mr-[6rem] lg:mt-[1.5rem]">
+                        </div>
             </div>
         </div>
     </div>
+    
 <!-----------------footer----------------------->
     <footer>
     <div class="footer bg-lightgray ">          
@@ -300,9 +302,9 @@
                     </div>
                     <div class="icons py-[1rem]">
                         <ul class="flex gap-4 justify-center">
-                                <li><i class="fa-brands fa-linkedin text-white text-[2rem] mt-[.5rem]"></i></li>
-                                <li><i class="fa-brands fa-github text-white text-[2rem] mt-[.5rem]"></i></li>
-                                <li><i class="fa-solid fa-envelope text-white text-[2rem] mt-[.5rem]"></i></li>
+                                <li><i class="fa-brands fa-linkedin text-white text-[2rem] mt-[.5rem] lg:hover:text-lightred"></i></li>
+                                <li><i class="fa-brands fa-github text-white text-[2rem] mt-[.5rem] lg:hover:text-lightred"></i></li>
+                                <li><i class="fa-solid fa-envelope text-white text-[2rem] mt-[.5rem] lg:hover:text-lightred"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -310,6 +312,12 @@
         
     </div>
     </footer> 
+
+
+    <!-- back to top -->
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+    class="hidden fixed z-90 bottom-8 right-8 border-0 w-14 h-12 rounded-md  bg-lightred  text-white text-4xl font-bold">&uarr;
+    </button>
 
     <script src="./script.js"></script>
 </body>
