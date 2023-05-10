@@ -55,13 +55,6 @@
         @apply  w-[50%]  pt-20 pl-0;
     }
 
-   
- 
-
-    .active{
-        @apply text-lightred;
-    }
-
     .line span{
         @apply w-[5rem] h-[.4rem] bg-[#F58F7C] block mx-auto lg:float-left;
     }
@@ -111,5 +104,8 @@
     #name{
     @apply text-lightred;
     }
-
+    
+    .header .header__nav ul li a.active{
+    @apply text-lightred;
+    }
 }

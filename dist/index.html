@@ -10,22 +10,32 @@
 </head>
 <body class="bg-white">
     <header>
-        <div class="header bg-darkgray">
+        <div class="header bg-darkgray fixed w-full">
             <div class="container">
                 <div class="header__wrapper flex items-center justify-between">
                     
                     <div class="branding">
                         <img src="../img/LOGO.png" alt="" class="w-[2.5rem]">
                     </div>
-                    <div class="header__nav">
-                        <ul class="lg:flex  lg:items-center" >
-                            <li class="w-[100%]  border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] active:text-lightred pl-[.5rem] pb-[1rem]"><a href="#banner" class="text-white text-[1.5rem] lg:hover:text-lightred">Home</a></li>
-                            <li  class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] lg:mx-[2rem] pl-[.5rem] pb-[1rem]"><a href="#about" class="text-white text-[1.5rem] lg:hover:text-lightred">About</a> </li>
-                            <li  class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] pl-[.5rem] pb-[1rem]"  ><a href="#services" class="text-white text-[1.5rem] lg:hover:text-lightred">Services</a></li>
-                            <li  class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] lg:mx-[2rem] pl-[.5rem] pb-[1rem]"><a href="#works" class="text-white text-[1.5rem] lg:hover:text-lightred">Works</a></li>
-                            <li  class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] pl-[.5rem] pb-[1rem]"><a href="#contact" class="text-white text-[1.5rem] lg:hover:text-lightred">Contact</a></li>
+                      <div class="header__nav">
+                        <ul class="lg:flex  lg:items-center z-10" >
+                            <li  class="w-[100%]  border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem]  pl-[.5rem] pb-[1rem]"> <a href="#banner"  id="#home-link" class="closed active text-white text-[1.5rem]  ">Home</a></li>
+                            <li  class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] lg:mx-[2rem] pl-[.5rem] pb-[1rem]"><a href="#about" class=" closed text-white text-[1.5rem] ">About</a> </li>
+                            <li  class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] pl-[.5rem] pb-[1rem]"  ><a href="#services" class=" closed text-white text-[1.5rem] ">Services</a></li>
+                            <li  class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] lg:mx-[2rem] pl-[.5rem] pb-[1rem]"><a href="#works" class=" closed text-white text-[1.5rem] ">Works</a></li>
+                            <li  class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] pl-[.5rem] pb-[1rem]"><a href="#contact" class=" closed text-white text-[1.5rem] ">Contact</a></li>
                         </ul>
-                    </div>
+                    </div>  
+
+                       <!-- <div class="header__nav">
+                    <ul class="lg:flex lg:items-center z-10">
+                        <li class="w-[100%]  border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem]  pl-[.5rem] pb-[1rem]" id="header-1"><a href="#banner" id="#home-link" class="closed active  text-white text-[2.5rem] lg:text-[1.5rem]">Home</a></li>
+                        <li class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] lg:mx-[2rem] pl-[.5rem] pb-[1rem]"><a href="#about" class="closed text-white text-[2.5rem] lg:text-[1.5rem]">About</a></li>
+                        <li class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] pl-[.5rem] pb-[1rem]" ><a href="#services" class="closed text-white text-[2.5rem] lg:text-[1.5rem]">Services</a></li>
+                        <li class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] lg:mx-[2rem] pl-[.5rem] pb-[1rem]" ><a href="#works" class="closed text-white text-[2.5rem] lg:text-[1.5rem]">Works</a></li>
+                        <li class="w-[100%] border-b-lightred border-b-[2px] lg:border-b-0 mb-[1rem] pl-[.5rem] pb-[1rem]" ><a href="#contact" class="closed text-white text-[2.5rem] lg:text-[1.5rem]">Contact</a></li>
+                    </ul>
+                </div>   -->
 
                     <div class="toggle__menu z-[999] lg:hidden">
                         <span></span>
@@ -43,7 +53,7 @@
 <!-----------------bannerrrrr--------------------->
     <div class="banner bg-darkgray py-5 lg:h-[50rem] h-[48rem]" id="banner">
         <div class="container">
-            <div class="banner__wrapper lg:flex lg:justify-between lg:mt-[10rem] ">
+            <div class="banner__wrapper lg:flex lg:justify-between lg:mt-[12rem] ">
                 <div class="banner__content text-center lg:text-left mt-[10rem] lg:mt-0 ">
                     <h3 class="text-[1.5rem] text-white mb-[1rem] lg:text-[2rem] ">Web Developer</h3>
                     <div class="line">
@@ -153,7 +163,7 @@
                         <span></span>
                     </div>
 
-                    <div class="latest__card lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-8 ">
+                    <div class="latest__card lg:grid lg:grid-rows-2 lg:grid-flow-col lg:gap-8 z-0 ">
                 
                         <div class=" justify-center">
                             <div class="group  h-56 w-96 [perspective:1000px] mx-auto" >
@@ -281,9 +291,9 @@
                     
                 </div>
                     <div class="contact__form mt-[2rem] py-20 lg:block text-center lg:py-5 ">
-                        <input type="name" placeholder="Name" id="name" class="  w-[26rem] h-[2rem] rounded-lg lg:block lg:w-[40rem] lg:h-[4rem] px-[2rem] ">
-                        <input type="email" placeholder="Email" class="w-[26rem] h-[2rem] mt-[1.5rem] mb-[1.5rem] rounded-md lg:block lg:w-[40rem] lg:h-[4rem] lg:mt-[2.5rem] lg:mb-[2.5rem] px-[2rem]"  >
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="w-[26rem] rounded-md lg:block lg:w-[40rem] lg:h-[12rem] px-[2rem] py-[1rem]"></textarea><br>
+                        <input type="name" placeholder="Name" id="name" class="  w-[26rem] h-[2rem] rounded-lg lg:block lg:w-[40rem] lg:h-[4rem] px-[1rem] ">
+                        <input type="email" placeholder="Email" class="w-[26rem] h-[2rem] mt-[1.5rem] mb-[1.5rem] rounded-md lg:block lg:w-[40rem] lg:h-[4rem] lg:mt-[2.5rem] lg:mb-[2.5rem] px-[1rem]"  >
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="w-[26rem] rounded-md lg:block lg:w-[40rem] lg:h-[12rem] px-[1rem] py-[1rem]"></textarea><br>
                         <input type="submit" value="Send message" class="message text-[1rem] float-right mr-[1.5rem] mt-[1.5rem] text-white text-right lg:hover:bg-white lg:block lg:hover:text-lightred lg:float-right lg:mr-[6rem] lg:mt-[1.5rem]">
                         </div>
             </div>
@@ -316,7 +326,7 @@
 
     <!-- back to top -->
     <button id="to-top-button" onclick="goToTop()" title="Go To Top"
-    class="hidden fixed z-90 bottom-8 right-8 border-0 w-14 h-12 rounded-md  bg-lightred  text-white text-4xl font-bold">&uarr;
+    class="hidden fixed z-90 bottom-8 right-8 border-0 w-14 h-12 rounded-md  bg-lightred  text-white text-4xl font-bold ">&uarr;
     </button>
 
     <script src="./script.js"></script>

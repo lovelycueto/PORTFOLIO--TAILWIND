@@ -11,7 +11,23 @@ toggleMenu.addEventListener("click", () => {
   headerNav.style=("transition:.5s ease");
   arjay.classList.toggle("show");
 
-})
+});
+
+const actclosing =document.querySelectorAll(".closed");
+actclosing.forEach((sara) => {
+  sara.addEventListener("click", () => {
+    removeActiveclose();
+    sara.classList.add("active");
+    headerNav.classList.remove("open");
+    toggleMenu.classList.remove("open");
+    headerNav.style=("transition: .5s ease");
+  })
+});
+function removeActiveclose(){
+  actclosing.forEach((sara) => {
+    sara.classList.remove("active");
+  })
+};
 
 var toTopButton = document.getElementById("to-top-button");
 
@@ -27,4 +43,7 @@ var toTopButton = document.getElementById("to-top-button");
     // When the user clicks on the button, smoothy scroll to the top of the document
     function goToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        removeActiveclose();
+        const home = document.getElementById('#home-link');
+        home.classList.add('active');
     }
